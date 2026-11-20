@@ -1,0 +1,53 @@
+services:
+  # Mailpit: Local mock SMTP server & visual inbox
+  mailpit:
+    image: axllent/mailpit:latest
+    container_name: product-atlas-mailpit
+    restart: unless-stopped
+    ports:
+      - "1025:1025" # SMTP server
+      - "8025:8025" # Web UI inbox for reviewers
+    environment:
+      MP_MAX_MESSAGES: 500
+      MP_DATABASE: ""
+      MP_SMTP_AUTH_ACCEPT_ANY: 1
+      MP_SMTP_AUTH_ALLOW_INSECURE: 1
+
+  # Backend: NestJS REST API
+  api:
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+    container_name: product-atlas-api
+    restart: unless-stopped
+    ports:
+      - "3001:3001"
+    environment:
+      - PORT=3001
+      - NODE_ENV=production
+      - CORS_ORIGIN=http://localhost:5173,http://localhost:3000,http://localhost:8080
+      - PRODUCT_DATA_SOURCE=fakestore
+      - FAKESTORE_API_BASE_URL=https://fakestoreapi.com
+      - FAKESTORE_TIMEOUT_MS=5000
+      - PRODUCT_CACHE_TTL_MS=300000
+      - EMAIL_PROVIDER=smtp
+      - SMTP_HOST=mailpit
+      - SMTP_PORT=1025
+      - EMAIL_FROM=noreply@productatlas.dev
+      - SALES_INBOX_EMAIL=sales@productatlas.dev
+    depends_on:
+      - mailpit
+
+  # Frontend: React 19 / 18 + Vite + Tailwind CSS SPA
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+      args:
+        - VITE_API_BASE_URL=http://localhost:3001/api
+    container_name: product-atlas-web
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    depends_on:
+      - api

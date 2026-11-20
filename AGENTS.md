@@ -1,6 +1,6 @@
 # AGENTS.md — AI Agent Guidance & Coding Directives
 
-This document provides context, architectural constraints, and engineering guidelines for AI coding agents (such as Google Antigravity and Google Gemini) working on the **ANSR Product Catalogue** repository.
+This document provides context, architectural constraints, and engineering guidelines for AI coding agents (such as Google Antigravity and Google Gemini) working on the **Product Atlas** repository (`https://github.com/arunsinghcodes/product-atlas`).
 
 ---
 
@@ -54,3 +54,4 @@ This document provides context, architectural constraints, and engineering guide
 - **Testing**:
   - Test critical paths: featured product selection, category filtering, search query handling, enquiry validation, and email dispatch.
   - Mock external network calls in unit tests.
+

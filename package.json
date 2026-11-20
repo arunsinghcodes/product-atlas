@@ -1,7 +1,7 @@
 {
-  "name": "ansr-product-catalogue",
+  "name": "product-atlas",
   "version": "1.0.0",
-  "description": "ANSR AI-Native Engineer Code Challenge - Scalable Product Catalogue MVP",
+  "description": "Product Atlas — Discover products. Explore possibilities. Connect with sellers. (ANSR AI-Native Challenge)",
   "private": true,
   "workspaces": [
     "apps/*"
@@ -30,3 +30,4 @@
     "prettier": "^3.5.3"
   }
 }
+

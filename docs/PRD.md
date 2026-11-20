@@ -1,5 +1,5 @@
 # Product Requirements Document (PRD)
-## ANSR AI-Native Engineer Challenge — Scalable Product Catalogue MVP
+## Product Atlas — Product Discovery Platform (ANSR AI-Native Challenge)
 
 ---
 
@@ -42,3 +42,4 @@ The goal of this project is to build an interactive, production-ready Product Ca
 4. **Extensibility**: Product provider and Email provider use interface-based adapter patterns.
 5. **Infrastructure**: AWS-compatible containerized deployment (`docker-compose.yml`).
 6. **Zero Paid Accounts**: Local Mailpit server for visual inspection of sent emails on port 8025.
+
