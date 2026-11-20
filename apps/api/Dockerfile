@@ -3,14 +3,15 @@ FROM node:20-alpine AS builder
 
 WORKDIR /app
 
-# Copy root workspace configs
+# Copy root workspace configs and workspace package declarations
 COPY package*.json ./
 COPY apps/api/package*.json ./apps/api/
+COPY apps/web/package*.json ./apps/web/
 
-# Install dependencies
+# Install dependencies across workspaces
 RUN npm ci
 
-# Copy source and config
+# Copy API source
 COPY apps/api ./apps/api
 
 # Build NestJS app
@@ -27,8 +28,8 @@ ENV PORT=3001
 
 COPY package*.json ./
 COPY apps/api/package*.json ./apps/api/
+COPY apps/web/package*.json ./apps/web/
 
-# Install only production dependencies
 RUN npm ci --omit=dev
 
 COPY --from=builder /app/apps/api/dist ./apps/api/dist
@@ -37,4 +38,3 @@ EXPOSE 3001
 
 WORKDIR /app/apps/api
 CMD ["node", "dist/src/main.js"]
-
