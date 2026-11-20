@@ -1,0 +1,32 @@
+{
+  "name": "ansr-product-catalogue",
+  "version": "1.0.0",
+  "description": "ANSR AI-Native Engineer Code Challenge - Scalable Product Catalogue MVP",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces --if-present",
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "format": "prettier --write \"apps/**/*.{ts,tsx,js,jsx,json,md}\"",
+    "docker:up": "docker compose up --build",
+    "docker:down": "docker compose down"
+  },
+  "keywords": [
+    "ansr",
+    "product-catalogue",
+    "ai-native",
+    "nestjs",
+    "react",
+    "typescript"
+  ],
+  "author": "Arun Singh",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "prettier": "^3.5.3"
+  }
+}
