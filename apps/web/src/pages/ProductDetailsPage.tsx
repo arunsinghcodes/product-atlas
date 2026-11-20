@@ -167,3 +167,4 @@ export const ProductDetailsPage: React.FC = () => {
     </div>
   );
 };
+

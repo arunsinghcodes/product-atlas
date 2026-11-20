@@ -27,3 +27,4 @@ export class ConsoleEmailAdapter implements IEmailProvider {
     };
   }
 }
+

@@ -1,7 +1,7 @@
 {
-  "name": "@ansr/web",
+  "name": "@product-atlas/web",
   "version": "1.0.0",
-  "description": "ANSR Product Catalogue Web Client",
+  "description": "Product Atlas Web Client",
   "private": true,
   "type": "module",
   "scripts": {
@@ -33,3 +33,4 @@
     "vitest": "^3.0.7"
   }
 }
+

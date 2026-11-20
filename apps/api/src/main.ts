@@ -33,7 +33,8 @@ async function bootstrap() {
   app.useGlobalInterceptors(new LoggingInterceptor());
 
   await app.listen(port);
-  logger.log(`🚀 ANSR Product Catalogue API running on: http://localhost:${port}/api`);
+  logger.log(`🚀 Product Atlas API running on: http://localhost:${port}/api`);
 }
 
 bootstrap();
+

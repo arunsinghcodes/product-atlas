@@ -161,3 +161,4 @@ export class FakeStoreProductAdapter implements IProductProvider {
     }
   }
 }
+

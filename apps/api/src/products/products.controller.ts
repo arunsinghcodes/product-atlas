@@ -28,3 +28,4 @@ export class ProductsController {
     return this.productsService.getAllProducts(query.search, query.category, query.limit);
   }
 }
+

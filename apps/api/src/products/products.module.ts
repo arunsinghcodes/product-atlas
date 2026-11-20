@@ -27,3 +27,4 @@ import { FakeStoreProductAdapter } from './adapters/fakestore-product.adapter';
   exports: [ProductsService, PRODUCT_PROVIDER],
 })
 export class ProductsModule {}
+

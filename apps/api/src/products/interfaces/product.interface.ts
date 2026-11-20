@@ -19,3 +19,4 @@ export interface CategoryProductsResponse {
   topRated: Product[];
   additional: Product[];
 }
+

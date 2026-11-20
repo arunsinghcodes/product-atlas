@@ -49,3 +49,4 @@ describe('EnquiriesService (AC-5)', () => {
     expect(enquiries[0].customerEmail).toBe('jane.doe@example.com');
   });
 });
+

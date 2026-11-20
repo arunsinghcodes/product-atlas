@@ -1,13 +1,18 @@
-# Pull Request Description: Scalable Product Catalogue MVP (ANSR AI-Native Challenge)
+# Pull Request: Product Atlas — Scalable Product Discovery Platform (ANSR AI-Native Challenge)
 
-> **Branch**: `feature/product-catalogue-mvp` -> `main`  
-> **Author**: Arun Singh  
+> **Repository**: [arunsinghcodes/product-atlas](https://github.com/arunsinghcodes/product-atlas)  
+> **Branch**: `feature/product-catalogue-mvp` ➔ `main`  
+> **Author**: Arun Singh ([@arunsinghcodes](https://github.com/arunsinghcodes))  
 > **Submission Date**: November 2026
 
 ---
 
 ## 📌 Summary of Changes
-This PR implements the complete **Scalable Product Catalogue MVP** for the ANSR AI-Native Engineer Challenge. Sourced from the Fake Store API, the application provides a modular, extensible foundation designed for long-term growth using Hexagonal Architecture (Ports & Adapters).
+This Pull Request delivers the complete **Product Atlas** platform — an AI-native, production-grade product catalogue and enquiry MVP built for the ANSR AI-Native Engineer Challenge.
+
+**Tagline**: *Discover products. Explore possibilities. Connect with sellers.*
+
+Addressing the entrepreneur’s directive that this must **not** be a throwaway prototype, Product Atlas establishes a rock-solid foundation that separates concerns cleanly between frontend, backend, and external dependencies via **Hexagonal Architecture (Ports and Adapters)**.
 
 All product requests are strictly mediated by our NestJS backend; the React client never communicates directly with external APIs.
 

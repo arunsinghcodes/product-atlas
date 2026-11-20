@@ -32,3 +32,4 @@ describe('ProductCard Component', () => {
     expect(screen.getByText('4.8')).toBeInTheDocument();
   });
 });
+

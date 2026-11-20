@@ -12,10 +12,10 @@ export const Footer: React.FC = () => {
               <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center">
                 <ShoppingBag className="w-4 h-4 text-white" />
               </div>
-              <span className="text-lg font-bold">ANSR Catalogue</span>
+              <span className="text-lg font-bold">Product Atlas</span>
             </div>
             <p className="text-xs leading-relaxed text-slate-400">
-              A high-fidelity Product Catalogue MVP built for the ANSR AI-Native Engineer Challenge with Google Antigravity & Gemini.
+              Discover products. Explore possibilities. Connect with sellers. Built for the ANSR AI-Native Engineer Challenge with Google Antigravity & Gemini.
             </p>
           </div>
 
@@ -73,7 +73,7 @@ export const Footer: React.FC = () => {
         </div>
 
         <div className="pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
-          <p>© {new Date().getFullYear()} ANSR Product Catalogue. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Product Atlas. All rights reserved.</p>
           <p className="flex items-center gap-1">
             Engineered with <Heart className="w-3 h-3 text-red-500 inline fill-red-500" /> by Arun Singh
           </p>
@@ -82,3 +82,4 @@ export const Footer: React.FC = () => {
     </footer>
   );
 };
+

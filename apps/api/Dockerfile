@@ -37,3 +37,4 @@ EXPOSE 3001
 
 WORKDIR /app/apps/api
 CMD ["node", "dist/src/main.js"]
+

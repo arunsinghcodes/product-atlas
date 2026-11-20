@@ -16,3 +16,4 @@ export interface EnquirySubmissionResult {
   productTitle: string;
   submittedAt: string;
 }
+

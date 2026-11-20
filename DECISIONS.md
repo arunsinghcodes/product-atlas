@@ -1,6 +1,6 @@
-# Architecture Decisions & Assumptions (DECISIONS.md)
+# Product Atlas — Architecture Decisions & Assumptions (DECISIONS.md)
 
-This document records the architectural decisions, trade-offs, assumptions, and future evolution roadmap for the **ANSR Product Catalogue MVP**, fulfilling the requirements outlined in the ANSR AI-Native Engineer Challenge specification.
+This document records the architectural decisions, trade-offs, assumptions, and future evolution roadmap for **Product Atlas (Product Discovery Platform)**, fulfilling the requirements outlined in the ANSR AI-Native Engineer Challenge specification.
 
 ---
 
@@ -83,3 +83,4 @@ If granted an additional day of development, the roadmap includes:
    - Replace the in-memory Map cache with Redis (AWS ElastiCache) for horizontally scaled multi-instance deployments.
 5. **E2E Playwright Test Suite**:
    - Automated end-to-end regression tests verifying the user journey from homepage -> search -> category view -> enquiry submission -> Mailpit verification.
+

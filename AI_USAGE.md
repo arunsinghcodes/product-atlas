@@ -1,6 +1,6 @@
-# AI Usage Notes (AI_USAGE.md)
+# Product Atlas — AI Usage Notes (AI_USAGE.md)
 
-This document provides a transparent and detailed account of the AI-native development methodology utilized to build the **ANSR Product Catalogue**, fulfilling section 6 of the ANSR AI-Native Engineer Challenge specification.
+This document provides a transparent and detailed account of the AI-native development methodology utilized to build **Product Atlas**, fulfilling section 6 of the ANSR AI-Native Engineer Challenge specification.
 
 ---
 
@@ -79,3 +79,4 @@ The development process was executed in structured, verifiable phases:
 | **5. Testing & Code Review** | ~20 mins | Full suite test verification (12/12 passing), edge case validation, TypeScript compile verification. |
 | **6. Documentation & PR Prep** | ~20 mins | Authoring `README.md`, `DECISIONS.md`, `AI_USAGE.md`, and Pull Request documentation. |
 | **Total Time** | **~3 hours** | Cleanly aligned with the expected 2–3 hour time-box. |
+

@@ -32,3 +32,4 @@ import { ConsoleEmailAdapter } from './adapters/console-email.adapter';
   exports: [EnquiriesService],
 })
 export class EnquiriesModule {}
+

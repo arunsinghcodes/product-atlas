@@ -29,3 +29,4 @@ export class CreateEnquiryDto {
   @MaxLength(1000, { message: 'Message cannot exceed 1000 characters' })
   message?: string;
 }
+

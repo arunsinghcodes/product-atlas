@@ -182,3 +182,4 @@ export const SEED_PRODUCTS: Product[] = [
     rating: { rate: 3.6, count: 145 }
   }
 ];
+

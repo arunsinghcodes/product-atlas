@@ -11,3 +11,4 @@ export interface EmailDispatchResult {
 export interface IEmailProvider {
   sendEnquiryNotification(enquiry: Enquiry): Promise<EmailDispatchResult>;
 }
+

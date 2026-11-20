@@ -36,10 +36,10 @@ export const Header: React.FC = () => {
             </div>
             <div>
               <span className="text-xl font-extrabold tracking-tight text-slate-900 group-hover:text-blue-600 transition-colors">
-                ANSR<span className="text-blue-600">.</span>
+                Product<span className="text-blue-600">Atlas</span>
               </span>
               <span className="block text-[10px] font-semibold text-slate-400 -mt-1 tracking-wider uppercase">
-                Product Catalogue
+                Discovery Platform
               </span>
             </div>
           </Link>
@@ -177,3 +177,4 @@ export const Header: React.FC = () => {
     </header>
   );
 };
+

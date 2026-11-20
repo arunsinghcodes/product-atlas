@@ -136,3 +136,4 @@ export const AllProductsPage: React.FC = () => {
     </div>
   );
 };
+

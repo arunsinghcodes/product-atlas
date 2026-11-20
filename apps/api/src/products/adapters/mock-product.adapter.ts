@@ -35,3 +35,4 @@ export class MockProductAdapter implements IProductProvider {
     return categories;
   }
 }
+

@@ -18,3 +18,4 @@ export class CategoriesController {
     return this.categoriesService.getCategoryDetails(category);
   }
 }
+

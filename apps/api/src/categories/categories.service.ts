@@ -14,3 +14,4 @@ export class CategoriesService {
     return this.productsService.getCategoryProducts(categoryName);
   }
 }
+

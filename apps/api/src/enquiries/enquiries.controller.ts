@@ -18,3 +18,4 @@ export class EnquiriesController {
     return this.enquiriesService.getAllEnquiries();
   }
 }
+

@@ -10,3 +10,4 @@ import { ProductsModule } from '../products/products.module';
   exports: [CategoriesService],
 })
 export class CategoriesModule {}
+
