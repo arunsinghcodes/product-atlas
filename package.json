@@ -7,9 +7,13 @@
     "apps/*"
   ],
   "scripts": {
-    "dev": "npm run dev --workspaces --if-present",
+    "dev": "concurrently -n \"api,web\" -c \"blue,green\" \"npm --prefix apps/api run dev\" \"npm --prefix apps/web run dev\"",
+    "dev:api": "npm --prefix apps/api run dev",
+    "dev:web": "npm --prefix apps/web run dev",
     "build": "npm run build --workspaces --if-present",
     "test": "npm run test --workspaces --if-present",
+    "test:api": "npm --prefix apps/api test",
+    "test:web": "npm --prefix apps/web test",
     "lint": "npm run lint --workspaces --if-present",
     "format": "prettier --write \"apps/**/*.{ts,tsx,js,jsx,json,md}\"",
     "docker:up": "docker compose up --build",
